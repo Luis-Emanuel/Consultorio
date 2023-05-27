@@ -1,0 +1,9 @@
+.consulta__info{
+    padding: 1rem;
+}
+
+.consulta__hora{
+    font-weight: 500;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,7 @@
+.consulta{
+    background-color: var(--bg-cartao-consulta);
+    border-radius: 0.5rem;
+}
+.consulta__divisao{
+    border-bottom: var(--divisao-consulta);
+}

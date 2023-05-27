@@ -1,0 +1,38 @@
+.consulta__botoes{
+    display: flex;
+    column-gap: 1.125rem;
+}
+.consulta__botao{
+    font-family: var(--fonte);
+    border: none;
+    padding: 0.813rem 1rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.consulta__botao--video{
+    color: var(--texto-branco);
+    background-color: var(--bg-botao-video);
+
+}
+.consulta__botao--audio{
+    border: 1px solid var(--borda-botao-audio);
+    background-color: var(--bg-botao-audio);
+}
+.consulta__botao--endereco{
+    color: var(--texto-branco);
+    background-color: var(--bg-botao-endereço);
+    width: 100%;
+}
+
+.botao__flutuante{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: none;
+    color: var(--texto-branco);
+    background-color: var(--bg-botao-adicionaConsulta);
+}
+.botao__flutuante::before{
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+:root {
+    /* cores */
+    --bg-botao-video: #FFB050;
+    --bg-botao-endereço: #4894FF;
+    --bg-botao-adicionaConsulta: #4894FF;
+    --bg-botao-mensagem: #F6F6F6;
+    --bg-botao-audio: #ffffff;
+    --bg-cartao-consulta: #ffffff;
+    --bg-fundo-menubar: #ffffff;
+    
+    --borda-botao-audio: #ECECEC;
+    
+    --texto-branco: #ffffff;
+    --texto-destaque: #464646;
+    --texto-destaque-secundario: #A3A3A3;
+    --texto-menu-ativo: #4894FF;
+    --texto-menu: #A3A3A3;
+
+    /* Formulario */
+    --texto-formulario-label: #898989;
+    --texto-formulario-input: #CFCFCF;
+    --texto-formulario-hover: #ADADAD;
+    --texto-formulario-botao:#FFFFFF;
+    --bg-formulario-botao:#4894FF;
+    --bg-formulario-botao-hover:#4786F0;
+    --bg-formulario-botao-select:#4062C9;
+    --bg-formulario-input: #FFFFFF;
+    --borda-formulario-input: 1px solid #ECECEC;
+    --borda-formulario-input-hover: 1px solid #CFCFCF;
+    --borda-formulario-input-select: 2px solid #4894FF;
+    --borda-formulario-input-erro: 1px solid #DE0000;
+    --borda-formulario-botao-select:  2px solid #4894FF;
+
+    
+    
+    /* Divisao Consulta */
+    --divisao-consulta: solid 1px rgb(70, 70, 70, 0.1);
+
+    /* Fonte */
+    --fonte: 'Montserrat', sans-serif;
+    
+    /* Sombra */
+    --sombra-botao-adicionaConsulta: 0px 4px 4px rgba(238, 122, 13, 0.06);
+}
+*{
+    font-family: var(--fonte);
+}
+body {
+    background-color: rgb(229, 229, 229, 0.3);
+    font-family: var(--fonte);
+}
+
+@media (min-width: 959px){
+    body{
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns:auto 1fr ;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "rodape perfil"
+        "rodape lista"
+        "rodape formulario";
+    }
+
+    .perfil{
+        grid-area: perfil;
+    }
+    .lista{
+        grid-area: lista;
+    }
+    .rodape{
+        grid-area: rodape;
+    }
+    .formulario{
+        grid-area: formulario;
+    }
+}
